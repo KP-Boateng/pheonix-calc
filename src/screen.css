@@ -1,0 +1,50 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 20%;
+}
+
+.input {
+  font-size: 24px;
+  width: 100%;
+  font-weight: bold;
+  position: relative;
+  text-align: right;
+
+  /* New Rules For Enabling Horizontal Scrolling When Text Overflows */
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  51%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor.blinking-cursor {
+  position: absolute;
+  width: 1px;
+  height: 1.4em;
+  background-color: black;
+  animation: blink 1s infinite;
+}
+/* 
+.blinking-cursor {
+  width: 1px;
+  height: 1.4em;
+  background-color: black;
+  animation: blink 1s infinite;
+}
+ */
